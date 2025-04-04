@@ -1,14 +1,5 @@
-import requests
-import json
-import gzip
-import os
-import pandas as pd
 import views.logWriter as lw
-import logging
-from logging.handlers import RotatingFileHandler
-import time
 from datetime import datetime
-import numpy as np
 import config as sd
 import config as sd
 import models.cleartax_model as cm
@@ -64,9 +55,24 @@ def payments(payments):
 
 def update_invoice(data, t, v, i, vi, da, dd, md):
     try:
-        
-        
-        ZohoModel.update_invoice(data['bill_id'],json)
+        try:
+            discount_account_id = data['discount_account_id']
+        except:
+            discount_account_id = ""
+
+        if discount_account_id == "":
+            discount_account_id = sd.discount_id
+
+        diff = (datetime.strptime(md, '%Y-%m-%d')) - (datetime.strptime(data['date'], '%Y-%m-%d')).days
+        json = {
+            "discount_account_id": discount_account_id,
+            "bill_id": i,
+            "due_data": datetime.strptime(md, '%d-%m-%Y').strftime('%Y-%m-%d'),
+            "payment_terms": diff,
+            "payment_terms_label": "Net " + str(diff),
+            "discount": float(da)
+        }
+        ZohoModel.update_invoice(i, json)
         postingAck(t, v, i, vi)
         pass
     except Exception as e:
@@ -75,9 +81,8 @@ def update_invoice(data, t, v, i, vi, da, dd, md):
 
 def postingAck(t, v, i, vi):
     try:
-        
         json = {
-            "transactionId": t,############################
+            "transactionId": t,
             "vendorId": v,
             "internalInvoiceNumber": i,
             "vendorInvoiceNumber": vi,
@@ -89,7 +94,9 @@ def postingAck(t, v, i, vi):
             "invoiceUpdated": "Yes",
             "postingDate": str((datetime.now()).strftime("%d-%m-%Y"))
             }
-        pass
+        response = cm.postingAck(json)
+        if response['status'] == 'Success':
+            lw.logBackUpRecord('Posting of Bill has been acknowledged.')
     except Exception as e:
         lw.logRecord("Error in postingAck: " + str(e))
 

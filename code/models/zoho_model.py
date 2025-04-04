@@ -1,6 +1,5 @@
 import requests
 import config as sd
-import json
 from datetime import datetime, timedelta
 import views.logWriter as lw
 import pytz

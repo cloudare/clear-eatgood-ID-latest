@@ -1,7 +1,6 @@
 from flask import Flask
 import views.view as view
 import time
-from models.zoho_model import ZohoModel
 from apscheduler.schedulers.background import BackgroundScheduler
 import views.logWriter as lw
 

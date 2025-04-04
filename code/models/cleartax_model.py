@@ -1,14 +1,5 @@
 import requests
-import json
-import gzip
-import os
-import pandas as pd
 import views.logWriter as lw
-import logging
-from logging.handlers import RotatingFileHandler
-import time
-from datetime import datetime
-import numpy as np
 import config as sd
 
 def clear_header(authorization):
@@ -219,6 +210,3 @@ def uploadLocationMaster(body):
     
     except Exception as e:
         lw.logRecord("Error in uploadLocationMaster : " + str(e))
-
-def update_invoice():
-    pass
