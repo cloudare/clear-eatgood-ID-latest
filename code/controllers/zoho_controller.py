@@ -36,6 +36,7 @@ class ZohoController:
                     for idx, item in enumerate(data['contacts'], start=1):
                         try:
                             if item['contact_type'] == "vendor":
+                                # print(str(item['contact_id']))
                                 details = ZohoModel.fetch_contacts_details(str(item['contact_id']))
                                 msme_data = details['contact']['msme_type']
                                 msme = ''
@@ -46,7 +47,7 @@ class ZohoController:
                                 vendor = {
                                         "vendorID": details['contact']['contact_id'],
                                         "vendorName": details['contact']['company_name'],
-                                        "keyContactPerson": str(details['contact_salutation']) + str(details['first_name']) + str(details['last_name']),
+                                        "keyContactPerson": str(details['contact']['contact_salutation']) + str(details['contact']['first_name']) + str(details['contact']['last_name']),
                                         "emailId": details['contact']['email'],
                                         "mobileNo": details['contact']['phone'],
                                         "panNumber": details['contact']['pan_no'],
@@ -57,7 +58,7 @@ class ZohoController:
                                         "state": details['contact']['billing_address']['state'],
                                         "pinCode": details['contact']['billing_address']['zip'],
                                         "gstin": details['contact']['gst_no'],
-                                        "createdDate": datetime.strptime((details['contact']['created_date']), '%d-%m-%Y').strftime('%Y-%m-%d'),
+                                        "createdDate": datetime.strptime((details['contact']['created_date']), '%d/%m/%Y').strftime('%Y-%m-%d'),
                                         "cin": '', #details['contact']['contact_name'],
                                         "companyClass": '', #details['contact']['contact_name'],
                                         "companyCategory": '', #details['contact']['contact_name'],
@@ -70,7 +71,7 @@ class ZohoController:
                                 vendors.append(vendor)
                         except Exception as e:
                             lw.logRecord("Error in get_contacts for loop: " + str(e))
-                print("Vendors" + str(vendors))
+                # print("Vendors" + str(vendors))
                 # print("Customers" + str(customers))
                 cc.bulkVendor(vendors)
                 pass
@@ -96,20 +97,21 @@ class ZohoController:
                     for idx, item in enumerate(data['bills'], start=1):
                         try:
                             if item['entity_type'] == "bill":
-                                # print("vendor:" + str(item['contact_name']))
-                                # print("vendor:" + str(item['contact_id']))
+                                
+                                # print(str(item['bill_id']))
                                 details = ZohoModel.fetch_bill_details(str(item['bill_id']))
-                                # msme_data = details['invoices']['msme_type']
+                                
                                 reverse = 'N'
-                                if details['is_reverse_charge_applied'] != 'false' or details['is_reverse_charge_applied'] == False:
+                                # print(details['bill']['is_reverse_charge_applied'])
+                                if details['bill']['is_reverse_charge_applied'] != 'false' or details['bill']['is_reverse_charge_applied'] == False:
                                     reverse = 'Y'
                                 companyCode = ''
                                 ref1 = ''
                                 ref2 = ''
-                                for cust in details['customer_custom_fields']:
-                                    if cust['label'] == 'Company Id':
-                                        companyCode = cust['value']
-                                    elif cust['label'] == 'Customer Invoice Ref':
+                                for cust in details['bill']['custom_fields']:
+                                    # if cust['bill']['label'] == 'Company Id':
+                                    #     companyCode = cust['value']
+                                    if cust['label'] == 'Customer Invoice Ref':
                                         ref1 = cust['value']
                                     elif cust['label'] == 'Vendor Invoice Date':
                                         inv_date = cust['value']
@@ -120,37 +122,37 @@ class ZohoController:
                                 #     if ref['salesorder_number'] == details['reference_number']:
                                 #         # ref1 = ref['reference_number']
                                 #         ref2 = ref['shipment_date']
-                                date =datetime.strptime(str(details['date']), "%Y-%m-%d") 
+                                date =datetime.strptime(str(details['bill']['date']), "%Y-%m-%d") 
                                 year = ZohoController.get_fiscal_year(date)
                                 invoice = {
-                                    "plantLocationID": details['destination_of_supply'],
-                                    "gstin": details['gst_no'],
-                                    "internalInvoiceNumber": details['bill_id'],
-                                    "vendorInvoiceNumber": details['bill_number'],
-                                    "invoiceDate": datetime.strptime((inv_date), '%d-%m-%Y').strftime('%Y-%m-%d'),
-                                    "invoiceAcceptanceDate": datetime.strptime((acp_date), '%d-%m-%Y').strftime('%Y-%m-%d'),
-                                    "dueDate": datetime.strptime((details['due_date']), '%d-%m-%Y').strftime('%Y-%m-%d'),
-                                    "transactionAmount": details['total'],
-                                    "paymentNumber": "", #details['total'],
-                                    "vendorId": details['vendor_id'],
-                                    "bookNumber": "", #details['total'],
-                                    "misc": "", #details['total'],
-                                    "ref1": ref1, #details['total'],
-                                    "ref2": ref2, #details['total'],
-                                    "ref3": "", #details['total'],
-                                    "commodityType": "Product", #details['total'],
-                                    "commodity": "", #details['total'],
+                                    "plantLocationID": details['bill']['destination_of_supply'],
+                                    "gstin": details['bill']['gst_no'],
+                                    "internalInvoiceNumber": details['bill']['bill_id'],
+                                    "vendorInvoiceNumber": details['bill']['bill_number'],
+                                    "invoiceDate": datetime.strptime((inv_date), '%Y-%m-%d').strftime('%d-%m-%Y'),
+                                    "invoiceAcceptanceDate": datetime.strptime((acp_date), '%Y-%m-%d').strftime('%d-%m-%Y'),
+                                    "dueDate": datetime.strptime((details['bill']['due_date']), '%Y-%m-%d').strftime('%d-%m-%Y'),
+                                    "transactionAmount": details['bill']['total'],
+                                    # "paymentNumber": "", #details['total'],
+                                    "vendorId": details['bill']['vendor_id'],
+                                    # "bookNumber": "", #details['total'],
+                                    # "misc": "", #details['total'],
+                                    # "ref1": ref1, #details['total'],
+                                    # "ref2": ref2, #details['total'],
+                                    # "ref3": "", #details['total'],
+                                    # "commodityType": "Product", #details['total'],
+                                    # "commodity": "", #details['total'],
                                     "fiscalYear": year,        
-                                    "companyCode": companyCode, #details['customer_custom_fields'],
-                                    "invoiceReversal": reverse,
-                                    "currency":details['currency_code'],
-                                    "irn": "", #details['total'],
-                                    "entryDate": datetime.strptime((details['created_date']), '%d-%m-%Y').strftime('%Y-%m-%d')                                   
+                                    # "companyCode": companyCode, #details['customer_custom_fields'],
+                                    # "invoiceReversal": reverse,
+                                    # "currency":details['bill']['currency_code'],
+                                    # "irn": "", #details['total'],
+                                    # "entryDate": datetime.strptime((details['bill']['date']), '%Y-%m-%d').strftime('%d-%m-%Y')                                   
                                     }
                                 invoices.append(invoice)
                         except Exception as e:
                             lw.logRecord("Error in bulkInvoice for loop: " + str(e))
-                    print("Invoices" + str(invoices))
+                    # print("Invoices" + str(invoices))
                     
                     cc.bulkInvoices(invoices)
                 pass
@@ -205,11 +207,12 @@ class ZohoController:
                                 cns.append(cn)
                             except Exception as e:
                                 lw.logRecord("Error in creditDebitNote for loop: " + str(e))
-                        print("CN" + str(cns))
+                        # print("CN" + str(cns))
                         cc.creditDebitNote(dns)
                 except Exception as e:
                     lw.logRecord("Error in creditDebitNote for CN: " + str(e))
-                    
+            has_more_page = True
+            page = 1       
             while (has_more_page == True):
                 try:
                     data = ZohoModel.fetch_dn(page)
@@ -218,35 +221,35 @@ class ZohoController:
                     if data['page_context']['has_more_page'] == 'false' or data['page_context']['has_more_page'] == False:
                         has_more_page = False
                     
-                    if "vendor_credit" in data and data["vendor_credit"]:
-                        for idx, item in enumerate(data['vendor_credit'], start=1):
+                    if "vendor_credits" in data and data["vendor_credits"]:
+                        for idx, item in enumerate(data['vendor_credits'], start=1):
                         
                             try:
-                                details = ZohoModel.fetch_dn_details(str(item['vendor_credit']))
-                                date =datetime.strptime(str(details['date']), "%Y-%m-%d") 
+                                details = ZohoModel.fetch_dn_details(str(item['vendor_credit_id']))
+                                date =datetime.strptime(str(details['vendor_credit']['date']), "%Y-%m-%d") 
                                 year = ZohoController.get_fiscal_year(date)
                                 dn = {
-                                "vendorId": details['vendor_credit_id'],
-                                "vendorName": details['vendor_name'],
-                                "plantLocation": details['destination_of_supply'],
-                                "bookNumber": "", #details['reference_number'],
-                                "noteNumber": details['vendor_credit_number'],
-                                "internalInvoiceNumber": details['bill_id'],
-                                "vendorInvoiceNumber": details['bill_number'],
+                                "vendorId": details['vendor_credit']['vendor_credit_id'],
+                                "vendorName": details['vendor_credit']['vendor_name'],
+                                "plantLocation": details['vendor_credit']['destination_of_supply'],
+                                "bookNumber": "", #details['vendor_credit']['reference_number'],
+                                "noteNumber": details['vendor_credit']['vendor_credit_number'],
+                                "internalInvoiceNumber": details['vendor_credit']['bill_id'],
+                                "vendorInvoiceNumber": details['vendor_credit']['bill_number'],
                                 "noteType": "DR",
-                                "noteDate": datetime.strptime((details['date']), '%d-%m-%Y').strftime('%Y-%m-%d'),
-                                "transactionAmount": details['total'],
-                                "ref1": details['notes'],
+                                "noteDate": datetime.strptime((details['vendor_credit']['date']), '%d-%m-%Y').strftime('%Y-%m-%d'),
+                                "transactionAmount": details['vendor_credit']['total'],
+                                "ref1": details['vendor_credit']['notes'],
                                 "fiscalYear": year,        
-                                "companyCode": companyCode, #details['customer_custom_fields'],
-                                "currency":details['currency_code'],
-                                "irn": "", #details['total'],
-                                "entryDate": datetime.strptime((details['created_date']), '%d-%m-%Y').strftime('%Y-%m-%d')  ##############################                                
+                                "companyCode": companyCode, #details['vendor_credit']['customer_custom_fields'],
+                                "currency":details['vendor_credit']['currency_code'],
+                                "irn": "", #details['vendor_credit']['total'],
+                                "entryDate": datetime.strptime((details['vendor_credit']['created_date']), '%d-%m-%Y').strftime('%Y-%m-%d')  ##############################                                
                                 }
                                 dns.append(dn)
                             except Exception as e:
                                 lw.logRecord("Error in creditDebitNote for DN for loop: " + str(e))    
-                        print("DN" + str(dns))
+                        # print("DN" + str(dns))
                         
                         cc.creditDebitNote(dns)
                 except Exception as e:
@@ -270,13 +273,13 @@ class ZohoController:
                 if data['page_context']['has_more_page'] == 'false' or data['page_context']['has_more_page'] == False:
                     has_more_page = False
 
-                if "vendorpayment" in data and data["vendorpayment"]:
-                    for idx, item in enumerate(data['vendorpayment'], start=1):
+                if "vendorpayments" in data and data["vendorpayments"]:
+                    for idx, item in enumerate(data['vendorpayments'], start=1):
                         try:
-                            details = ZohoModel.fetch_payments_details(str(item['vendorpayment']))
+                            details = ZohoModel.fetch_payments_details(str(item['payment_id']))
                             # msme_data = details['invoices']['msme_type']
                             reverse = 'N'
-                            if details['is_reverse_charge_applied'] != 'false' or details['is_reverse_charge_applied'] == False:
+                            if details['vendorpayment']['is_reverse_charge_applied'] != 'false' or details['vendorpayment']['is_reverse_charge_applied'] == False:
                                 reverse = 'Y'
                             companyCode = ''
                             ref1 = ''
@@ -291,28 +294,28 @@ class ZohoController:
                             #     if ref['salesorder_number'] == details['reference_number']:
                             #         # ref1 = ref['reference_number']
                             #         ref2 = ref['shipment_date']
-                            date =datetime.strptime(str(details['date']), "%Y-%m-%d") 
+                            date =datetime.strptime(str(details['vendorpayment']['date']), "%Y-%m-%d") 
                             year = ZohoController.get_fiscal_year(date)
                             payment = {
-                                "vendorId": details['vendor_id'],
-                                "vendorName": details['vendor_name'],
-                                "plantLocation": details['destination_of_supply'],
-                                "bookNumber": "", #details['reference_number'],
-                                "paymentsNumber": details['payment_number'],
-                                "internalInvoiceNumber": details['bills'][0]['bill_id'],
-                                "vendorInvoiceNumber": details['bills'][0]['bill_number'],
-                                "paymentType": details['transfer_type'],
-                                "paymentDate": datetime.strptime((details['date']), '%d-%m-%Y').strftime('%Y-%m-%d'), #details['total'],
-                                "invoiceAmount": details['amount'],
-                                "paymentAmount": details['total_payment_amount'],
+                                "vendorId": details['vendorpayment']['vendor_id'],
+                                "vendorName": details['vendorpayment']['vendor_name'],
+                                "plantLocation": details['vendorpayment']['destination_of_supply'],
+                                "bookNumber": "", #details['vendorpayment']['reference_number'],
+                                "paymentsNumber": details['vendorpayment']['payment_number'],
+                                "internalInvoiceNumber": details['vendorpayment']['bills'][0]['bill_id'],
+                                "vendorInvoiceNumber": details['vendorpayment']['bills'][0]['bill_number'],
+                                "paymentType": details['vendorpayment']['transfer_type'],
+                                "paymentDate": datetime.strptime((details['vendorpayment']['date']), '%Y-%m-%d').strftime('%d-%m-%Y'), #details['vendorpayment']['total'],
+                                "invoiceAmount": details['vendorpayment']['amount'],
+                                "paymentAmount": details['vendorpayment']['total_payment_amount'],
                                 "fiscalYear": year,        
-                                "companyCode": companyCode, #details['customer_custom_fields'],
-                                "currency":details['currency_code']                                   
+                                "companyCode": companyCode, #details['vendorpayment']['customer_custom_fields'],
+                                "currency":details['vendorpayment']['currency_code']                                   
                                 }
                             payments.append(payment)
                         except Exception as e:
                             lw.logRecord("Error in payments for loop: " + str(e))
-                    print("Invoices" + str(payments))
+                    # print("Invoices" + str(payments))
                     
                     cc.payments(payment)
                 pass

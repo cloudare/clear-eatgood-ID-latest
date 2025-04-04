@@ -7,8 +7,18 @@ def clear_header(authorization):
         "Accept" : "application/json",
         "Content-Type" : "application/json",
         "Authorization" : authorization,
-        "REQUEST_TYPE" : "ENC",
+        # "REQUEST_TYPE" : "ENC",
         "applicationName" : "invoicemanager"
+    }
+    return header
+
+def clear_header_payment(authorization):
+    header = {
+        "Accept" : "application/json",
+        "Content-Type" : "application/json",
+        "Authorization" : authorization,
+        # "REQUEST_TYPE" : "ENC",
+        # "applicationName" : "invoicemanager"
     }
     return header
 
@@ -23,15 +33,16 @@ def getToken():
                 # "applicationName" : "invoicemanager"
             }
         body = {
-            "userName" : sd.userName,
-            "password" : sd.password
+            "userName" : str(sd.userName),
+            "password" : str(sd.password)
         }
         lw.logBackUpRecord("URL:" + str(url))
         lw.logBackUpRecord("Header:" + str(header))
         lw.logBackUpRecord("Payload:" + str(body))
         response = requests.post(url, headers=header, json=body)#, data=payload)
-
-        if str(response.json().get("authenticated")) == True or str(response.json().get("authenticated")) == 'true':
+        # print(response.json())
+        # print(str(response.json().get("authenticated")))
+        if str(response.json().get("authenticated")) == True or str(response.json().get("authenticated")) == 'True':
             authorization = response.json().get("token")
             lw.logBackUpRecord("Authorization Token is :" + str(authorization))
             return authorization
@@ -58,7 +69,7 @@ def bulkVendorMaster(body):
             response = requests.post(url, headers=header, json=body)
             # auth = authorization
             lw.logBackUpRecord(auth)
-        
+        # print(response.json())
         return response
     except Exception as e:
         lw.logRecord("Error in bulkVendorMaster: " + str(e))
@@ -83,7 +94,7 @@ def bulkInvoice(body):
             lw.logBackUpRecord("Bulk Invoice Data has been uploaded with error.")
         else:
             lw.logBackUpRecord("Bulk Invoice Data has been uploaded Successfully.")
-        
+        return response.json()
     except Exception as e:
         lw.logRecord("Error in bulkInvoice: " + str(e))
 
@@ -107,7 +118,7 @@ def creditDebitNote(body):
             lw.logBackUpRecord("credit /Debit Note Data has been uploaded with error.")
         else:    
             lw.logBackUpRecord("credit /Debit Note Data has been uploaded Successfully.")
-        return response.json()
+        return response
     except Exception as e:
         lw.logRecord("Error in creditDebitNote: " + str(e))
 
@@ -116,7 +127,7 @@ def payments(body):
         auth = getToken()
         lw.logBackUpRecord("Calling payments  API.")
         url = sd.clear_api_url + "/payments"
-        header = clear_header(auth)
+        header = clear_header_payment(auth)
         lw.logBackUpRecord("URL:" + str(url))
         lw.logBackUpRecord("Header:" + str(header))
         lw.logBackUpRecord("Payload:" + str(body))
@@ -131,7 +142,8 @@ def payments(body):
             lw.logBackUpRecord("Payments Data has been uploaded with error.")
         else:
             lw.logBackUpRecord("Payments Data has been uploaded Successfully.")
-        
+        # print(response.json())
+        return response
     except Exception as e:
         lw.logRecord("Error in payments : " + str(e))
 

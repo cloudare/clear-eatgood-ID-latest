@@ -7,8 +7,9 @@ from models.zoho_model import ZohoModel
 
 def bulkVendor(vendors):
     try:
+        # print(vendors)
         response = cm.bulkVendorMaster(vendors)
-        print(response)
+        # print(response)
         if response.status_code != 200:
             lw.logBackUpRecord("Bulk Vendor Data has been uploaded with error.")
         else:
@@ -20,7 +21,7 @@ def bulkVendor(vendors):
 def bulkInvoices(invoice):
     try:
         response = cm.bulkInvoice(invoice)
-        print(response)
+        # print(response)
         if response.status_code != 200:
             lw.logBackUpRecord("Bulk Vendor Data has been uploaded with error.")
         else:
@@ -32,7 +33,7 @@ def bulkInvoices(invoice):
 def creditDebitNote(cndn):
     try:
         response = cm.creditDebitNote(cndn)
-        print(response)
+        # print(response)
         if response.status_code != 200:
             lw.logBackUpRecord("Bulk Vendor Data has been uploaded with error.")
         else:
@@ -43,8 +44,9 @@ def creditDebitNote(cndn):
 
 def payments(payments):
     try:
+        # print(payments)
         response = cm.payments(payments)
-        print(response)
+        # print(response)
         if response.status_code != 200:
             lw.logBackUpRecord("Bulk Vendor Data has been uploaded with error.")
         else:

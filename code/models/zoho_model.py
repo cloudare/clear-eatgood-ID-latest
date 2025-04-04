@@ -30,7 +30,7 @@ class ZohoModel:
             tz = pytz.timezone("Asia/Kolkata")
             time = (datetime.now(tz)- timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S%z")
             time = time.replace("+", "%2B")
-            print(time)
+            # print(time)
             header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
             lw.logBackUpRecord("Calling API for Contact List for 25 records at a time.")
             lw.logBackUpRecord("URL:" + str(f"{sd.zoho_contact}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor")) #&last_modified_time={time}
@@ -42,7 +42,7 @@ class ZohoModel:
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
                 response = requests.get(f"{sd.zoho_contact}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_contacts: " + str(e))
@@ -63,7 +63,7 @@ class ZohoModel:
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
                 response = requests.get(f"{sd.zoho_contact}/{id}?organization_id={sd.organization_id}", headers=header)
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_contacts_details: " + str(e))
@@ -77,7 +77,7 @@ class ZohoModel:
             tz = pytz.timezone("Asia/Kolkata")
             time = (datetime.now(tz)- timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S%z")
             time = time.replace("+", "%2B")
-            print(time)
+            # print(time)
             header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
             lw.logBackUpRecord("Calling API for Bill List for 25 records at a time.")
             lw.logBackUpRecord("URL:" + str(f"{sd.zoho_bills}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor")) #&last_modified_time={time}
@@ -89,7 +89,7 @@ class ZohoModel:
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
                 response = requests.get(f"{sd.zoho_bills}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_bills: " + str(e))
@@ -111,7 +111,7 @@ class ZohoModel:
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
                 response = requests.get(f"{sd.zoho_bills}/{id}?organization_id={sd.organization_id}", headers=header)
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_bill_details: " + str(e))
@@ -125,19 +125,19 @@ class ZohoModel:
             tz = pytz.timezone("Asia/Kolkata")
             time = (datetime.now(tz)- timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S%z")
             time = time.replace("+", "%2B")
-            print(time)
+            # print(time)
             header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
             lw.logBackUpRecord("Calling API for CN List for 25 records at a time.")
-            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_cn}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor")) #&last_modified_time={time}
+            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_cn}?organization_id={sd.organization_id}&page={page}&per_page=25")) #&last_modified_time={time}
             lw.logBackUpRecord("Header:" + str(header))
-            response = requests.get(f"{sd.zoho_cn}?organization_id={sd.organization_id}sd.organization_id&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+            response = requests.get(f"{sd.zoho_cn}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
             # print(response.json())
             if response.status_code == 401:
                 ZohoModel.access_token = ZohoModel.get_access_token()
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
-                response = requests.get(f"{sd.zoho_cn}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+                response = requests.get(f"{sd.zoho_cn}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_cn: " + str(e))
@@ -159,6 +159,7 @@ class ZohoModel:
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
                 response = requests.get(f"{sd.zoho_cn}/{id}?organization_id={sd.organization_id}", headers=header)
                 lw.logBackUpRecord(ZohoModel.access_token)
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_cn_details: " + str(e))
@@ -172,19 +173,19 @@ class ZohoModel:
             tz = pytz.timezone("Asia/Kolkata")
             time = (datetime.now(tz)- timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S%z")
             time = time.replace("+", "%2B")
-            print(time)
+            # print(time)
             header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
             lw.logBackUpRecord("Calling API for DN List for 25 records at a time.")
-            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_dn}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor")) #&last_modified_time={time}
+            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_dn}?organization_id={sd.organization_id}&page={page}&per_page=25")) #&last_modified_time={time}
             lw.logBackUpRecord("Header:" + str(header))
-            response = requests.get(f"{sd.zoho_dn}?organization_id={sd.organization_id}sd.organization_id&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+            response = requests.get(f"{sd.zoho_dn}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
             # print(response.json())
             if response.status_code == 401:
                 ZohoModel.access_token = ZohoModel.get_access_token()
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
-                response = requests.get(f"{sd.zoho_dn}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+                response = requests.get(f"{sd.zoho_dn}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_dn: " + str(e))
@@ -219,19 +220,19 @@ class ZohoModel:
             tz = pytz.timezone("Asia/Kolkata")
             time = (datetime.now(tz)- timedelta(days=3)).strftime("%Y-%m-%dT%H:%M:%S%z")
             time = time.replace("+", "%2B")
-            print(time)
+            # print(time)
             header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
             lw.logBackUpRecord("Calling API for Payments List for 25 records at a time.")
-            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_payments}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor")) #&last_modified_time={time}
+            lw.logBackUpRecord("URL:" + str(f"{sd.zoho_payments}?organization_id={sd.organization_id}&page={page}&per_page=25")) #&last_modified_time={time}
             lw.logBackUpRecord("Header:" + str(header))
-            response = requests.get(f"{sd.zoho_payments}?organization_id={sd.organization_id}sd.organization_id&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+            response = requests.get(f"{sd.zoho_payments}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
             # print(response.json())
             if response.status_code == 401:
                 ZohoModel.access_token = ZohoModel.get_access_token()
                 header = {"Authorization": f"Zoho-oauthtoken {ZohoModel.access_token}"}
-                response = requests.get(f"{sd.zoho_payments}?organization_id={sd.organization_id}&page={page}&per_page=25&contact_type=vendor", headers=header) #&last_modified_time={time}
+                response = requests.get(f"{sd.zoho_payments}?organization_id={sd.organization_id}&page={page}&per_page=25", headers=header) #&last_modified_time={time}
                 lw.logBackUpRecord(ZohoModel.access_token)
-            print(response.json())
+            # print(response.json())
             return response.json()
         except Exception as e:
             lw.logRecord("Error in fetch_payments: " + str(e))

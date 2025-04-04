@@ -8,7 +8,7 @@ def mainProcess():
     try:
         ZohoController.get_contacts()
         ZohoController.bulkInvoice()
-        ZohoController.creditDebitNote()
+        #######ZohoController.creditDebitNote()
         ZohoController.payments()
         trns_id, vend_id, int_inv_no, ven_int_no, dis_amt, dis_date, matdate = cc.postingCreditDebitNote()
         if trns_id:

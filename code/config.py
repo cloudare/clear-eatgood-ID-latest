@@ -20,7 +20,7 @@ zoho_payments		= 'https://www.zohoapis.in/books/v3/vendorpayments'
 discount_id			= '1652083000000804258' 
 
 # Cleartax urls
-clear_api_url 		= 'https://xpedize-invoice-manager-sandbox-http.internal.cleartax.co/invoicemanager/api' 
+clear_api_url 		= 'https://api.clear.in/discounting/invoicemanager/api' 
 
 #Cleartax Token
 authorization = ''

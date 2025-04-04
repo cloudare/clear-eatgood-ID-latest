@@ -1,0 +1,445 @@
+04_04_2025 16:16:50 ---> Execution Started: Friday, 04. April 2025 04:16:50 PM
+04_04_2025 16:16:50 ---> Calling API for Payments List for 25 records at a time.
+04_04_2025 16:16:50 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments?organization_id=60028841364&page=1&per_page=25
+04_04_2025 16:16:50 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:16:51 ---> Calling API to get the refresh token.
+04_04_2025 16:16:51 ---> URL:https://accounts.zoho.in/oauth/v2/token?refresh_token=1000.2a59689ac60f3ea765b39f27a9ea78ff.b60dfa6d2df181adf1ed9ecab76157d8&client_id=1000.A3SBX7MWZ1NO0M5EGBQWJ5YRRP4O3O&client_secret=f0bd80916afcc31706fc116a973584297e79ddaad1&grant_type=refresh_token
+04_04_2025 16:16:51 ---> Header:{'Authorization': 'Bearer 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:16:51 ---> 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3
+04_04_2025 16:16:56 ---> Calling API for Payment deatils.
+04_04_2025 16:16:56 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531103?organization_id=60028841364
+04_04_2025 16:16:56 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:16 ---> Calling API for Payment deatils.
+04_04_2025 16:17:16 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531137?organization_id=60028841364
+04_04_2025 16:17:16 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:20 ---> Calling API for Payment deatils.
+04_04_2025 16:17:20 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003467191?organization_id=60028841364
+04_04_2025 16:17:20 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:21 ---> Calling API for Payment deatils.
+04_04_2025 16:17:21 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002662279?organization_id=60028841364
+04_04_2025 16:17:21 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:21 ---> Calling API for Payment deatils.
+04_04_2025 16:17:21 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552068?organization_id=60028841364
+04_04_2025 16:17:21 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:21 ---> Calling API for Payment deatils.
+04_04_2025 16:17:21 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552447?organization_id=60028841364
+04_04_2025 16:17:21 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:22 ---> Calling API for Payment deatils.
+04_04_2025 16:17:22 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002517170?organization_id=60028841364
+04_04_2025 16:17:22 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:22 ---> Calling API for Payment deatils.
+04_04_2025 16:17:22 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002470208?organization_id=60028841364
+04_04_2025 16:17:22 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:22 ---> Calling API for Payment deatils.
+04_04_2025 16:17:22 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429377?organization_id=60028841364
+04_04_2025 16:17:22 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:23 ---> Calling API for Payment deatils.
+04_04_2025 16:17:23 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429420?organization_id=60028841364
+04_04_2025 16:17:23 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:23 ---> Calling API for Payment deatils.
+04_04_2025 16:17:23 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412293?organization_id=60028841364
+04_04_2025 16:17:23 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:23 ---> Calling API for Payment deatils.
+04_04_2025 16:17:23 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421046?organization_id=60028841364
+04_04_2025 16:17:23 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:24 ---> Calling API for Payment deatils.
+04_04_2025 16:17:24 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421089?organization_id=60028841364
+04_04_2025 16:17:24 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:24 ---> Calling API for Payment deatils.
+04_04_2025 16:17:24 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412387?organization_id=60028841364
+04_04_2025 16:17:24 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:25 ---> Calling API for Payment deatils.
+04_04_2025 16:17:25 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412748?organization_id=60028841364
+04_04_2025 16:17:25 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:25 ---> Calling API for Payment deatils.
+04_04_2025 16:17:25 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412250?organization_id=60028841364
+04_04_2025 16:17:25 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:25 ---> Calling API for Payment deatils.
+04_04_2025 16:17:25 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387722?organization_id=60028841364
+04_04_2025 16:17:25 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:26 ---> Calling API for Payment deatils.
+04_04_2025 16:17:26 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387983?organization_id=60028841364
+04_04_2025 16:17:26 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:26 ---> Calling API for Payment deatils.
+04_04_2025 16:17:26 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386524?organization_id=60028841364
+04_04_2025 16:17:26 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:26 ---> Calling API for Payment deatils.
+04_04_2025 16:17:26 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387293?organization_id=60028841364
+04_04_2025 16:17:26 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:27 ---> Calling API for Payment deatils.
+04_04_2025 16:17:27 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387328?organization_id=60028841364
+04_04_2025 16:17:27 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:27 ---> Calling API for Payment deatils.
+04_04_2025 16:17:27 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386405?organization_id=60028841364
+04_04_2025 16:17:27 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:27 ---> Calling API for Payment deatils.
+04_04_2025 16:17:27 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384917?organization_id=60028841364
+04_04_2025 16:17:27 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:28 ---> Calling API for Payment deatils.
+04_04_2025 16:17:28 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384424?organization_id=60028841364
+04_04_2025 16:17:28 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:29 ---> Calling API for Payment deatils.
+04_04_2025 16:17:29 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384459?organization_id=60028841364
+04_04_2025 16:17:29 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.01034a7200de74a368cb3717de743bbf.f095f517a00c60599b25da86381c62b3'}
+04_04_2025 16:17:41 ---> Calling getToken API.
+04_04_2025 16:17:41 ---> URL:https://api.clear.in/discounting/invoicemanager/api/getToken
+04_04_2025 16:17:41 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'REQUEST_TYPE': 'ENC'}
+04_04_2025 16:17:41 ---> Payload:{'userName': 'api@eatgoods.com', 'password': 'Eat@12345'}
+04_04_2025 16:17:41 ---> Authorization Token is :ORjAnyyrKhKjibkkaaXKbrxaGRJtRabKsrjdAqHZULKNfHclXwkrZbgGjpGSNjtiXAmJXNsIhFazrUBYQDBXUrzjCfKaKDJJtwZAuCDFkZmzlFruIXLWPrKWXCtNzZSadqtjBjECivZSacSExYmOHknvsZboQUSeoBkoflLpsoxhcpXhRfFCEUidhnPTgMPmpoETPraTNyXbXmRSLIMtYcDSPshIaWQbXZgKbhMIAsnUCSakBWgXqJfYeWLhQTjM2f549844-cb88-31da-9d89-8bc53c5824cd
+04_04_2025 16:17:41 ---> Calling payments  API.
+04_04_2025 16:17:41 ---> URL:https://api.clear.in/discounting/invoicemanager/api/payments
+04_04_2025 16:17:41 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'ORjAnyyrKhKjibkkaaXKbrxaGRJtRabKsrjdAqHZULKNfHclXwkrZbgGjpGSNjtiXAmJXNsIhFazrUBYQDBXUrzjCfKaKDJJtwZAuCDFkZmzlFruIXLWPrKWXCtNzZSadqtjBjECivZSacSExYmOHknvsZboQUSeoBkoflLpsoxhcpXhRfFCEUidhnPTgMPmpoETPraTNyXbXmRSLIMtYcDSPshIaWQbXZgKbhMIAsnUCSakBWgXqJfYeWLhQTjM2f549844-cb88-31da-9d89-8bc53c5824cd', 'applicationName': 'invoicemanager'}
+04_04_2025 16:17:41 ---> Payload:{'vendorId': '1652083000002330001', 'vendorName': 'HRB3288-QA', 'plantLocation': 'KA', 'bookNumber': '', 'paymentsNumber': '86', 'internalInvoiceNumber': '1652083000002384285', 'vendorInvoiceNumber': 'B-PO-0010', 'paymentType': '', 'paymentDate': '23-12-2024', 'invoiceAmount': 1499.0, 'paymentAmount': 1499.0, 'fiscalYear': '2025', 'companyCode': '', 'currency': 'INR'}
+04_04_2025 16:17:49 ---> Payments Data has been uploaded Successfully.
+04_04_2025 16:18:26 ---> Execution Started: Friday, 04. April 2025 04:18:26 PM
+04_04_2025 16:18:26 ---> Calling API for Payments List for 25 records at a time.
+04_04_2025 16:18:26 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments?organization_id=60028841364&page=1&per_page=25
+04_04_2025 16:18:26 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:18:26 ---> Calling API to get the refresh token.
+04_04_2025 16:18:26 ---> URL:https://accounts.zoho.in/oauth/v2/token?refresh_token=1000.2a59689ac60f3ea765b39f27a9ea78ff.b60dfa6d2df181adf1ed9ecab76157d8&client_id=1000.A3SBX7MWZ1NO0M5EGBQWJ5YRRP4O3O&client_secret=f0bd80916afcc31706fc116a973584297e79ddaad1&grant_type=refresh_token
+04_04_2025 16:18:26 ---> Header:{'Authorization': 'Bearer 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:18:26 ---> 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c
+04_04_2025 16:18:36 ---> Calling API for Payment deatils.
+04_04_2025 16:18:36 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531103?organization_id=60028841364
+04_04_2025 16:18:36 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:36 ---> Calling API for Payment deatils.
+04_04_2025 16:18:36 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531137?organization_id=60028841364
+04_04_2025 16:18:36 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:36 ---> Calling API for Payment deatils.
+04_04_2025 16:18:36 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003467191?organization_id=60028841364
+04_04_2025 16:18:36 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:37 ---> Calling API for Payment deatils.
+04_04_2025 16:18:37 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002662279?organization_id=60028841364
+04_04_2025 16:18:37 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:37 ---> Calling API for Payment deatils.
+04_04_2025 16:18:37 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552068?organization_id=60028841364
+04_04_2025 16:18:37 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:38 ---> Calling API for Payment deatils.
+04_04_2025 16:18:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552447?organization_id=60028841364
+04_04_2025 16:18:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:38 ---> Calling API for Payment deatils.
+04_04_2025 16:18:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002517170?organization_id=60028841364
+04_04_2025 16:18:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:38 ---> Calling API for Payment deatils.
+04_04_2025 16:18:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002470208?organization_id=60028841364
+04_04_2025 16:18:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:39 ---> Calling API for Payment deatils.
+04_04_2025 16:18:39 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429377?organization_id=60028841364
+04_04_2025 16:18:39 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:39 ---> Calling API for Payment deatils.
+04_04_2025 16:18:39 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429420?organization_id=60028841364
+04_04_2025 16:18:39 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:39 ---> Calling API for Payment deatils.
+04_04_2025 16:18:39 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412293?organization_id=60028841364
+04_04_2025 16:18:39 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:40 ---> Calling API for Payment deatils.
+04_04_2025 16:18:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421046?organization_id=60028841364
+04_04_2025 16:18:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:40 ---> Calling API for Payment deatils.
+04_04_2025 16:18:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421089?organization_id=60028841364
+04_04_2025 16:18:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:40 ---> Calling API for Payment deatils.
+04_04_2025 16:18:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412387?organization_id=60028841364
+04_04_2025 16:18:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:41 ---> Calling API for Payment deatils.
+04_04_2025 16:18:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412748?organization_id=60028841364
+04_04_2025 16:18:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:41 ---> Calling API for Payment deatils.
+04_04_2025 16:18:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412250?organization_id=60028841364
+04_04_2025 16:18:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:42 ---> Calling API for Payment deatils.
+04_04_2025 16:18:42 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387722?organization_id=60028841364
+04_04_2025 16:18:42 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:42 ---> Calling API for Payment deatils.
+04_04_2025 16:18:42 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387983?organization_id=60028841364
+04_04_2025 16:18:42 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:42 ---> Calling API for Payment deatils.
+04_04_2025 16:18:42 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386524?organization_id=60028841364
+04_04_2025 16:18:42 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:43 ---> Calling API for Payment deatils.
+04_04_2025 16:18:43 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387293?organization_id=60028841364
+04_04_2025 16:18:43 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:43 ---> Calling API for Payment deatils.
+04_04_2025 16:18:43 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387328?organization_id=60028841364
+04_04_2025 16:18:43 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:44 ---> Calling API for Payment deatils.
+04_04_2025 16:18:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386405?organization_id=60028841364
+04_04_2025 16:18:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:44 ---> Calling API for Payment deatils.
+04_04_2025 16:18:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384917?organization_id=60028841364
+04_04_2025 16:18:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:44 ---> Calling API for Payment deatils.
+04_04_2025 16:18:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384424?organization_id=60028841364
+04_04_2025 16:18:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:45 ---> Calling API for Payment deatils.
+04_04_2025 16:18:45 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384459?organization_id=60028841364
+04_04_2025 16:18:45 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.b24339f74a2825e6e94c663ac21cbdea.7e2091392ff0f095db91fb2965193f3c'}
+04_04_2025 16:18:46 ---> Calling getToken API.
+04_04_2025 16:18:46 ---> URL:https://api.clear.in/discounting/invoicemanager/api/getToken
+04_04_2025 16:18:46 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'REQUEST_TYPE': 'ENC'}
+04_04_2025 16:18:46 ---> Payload:{'userName': 'api@eatgoods.com', 'password': 'Eat@12345'}
+04_04_2025 16:18:47 ---> Authorization Token is :hbSzphQWeYdVNBGBwOIvQcSmTLXRTcnDsYXVbwjlopHxXcNoSoslAJvPhQVXLSCypUuZJDMCIpkLzTgNIzhTTZLLuOKHQSjNAjyulgvEnyjwCbaASZiZPQjPdxJdRdJYxzHlmXQgPauWcQMJrjiGHCZlTKNOPLKVcPJeHKIqjXyYVSRWIctdRHjcPxHBJAIUUoZEYrDrcJYmZLMAbbPxbwzpiAulLnmdnOnIOiuNDlnaRjiuSRDNnCtZjczBkyhs2f549844-cb88-31da-9d89-8bc53c5824cd
+04_04_2025 16:18:47 ---> Calling payments  API.
+04_04_2025 16:18:47 ---> URL:https://api.clear.in/discounting/invoicemanager/api/payments
+04_04_2025 16:18:47 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'hbSzphQWeYdVNBGBwOIvQcSmTLXRTcnDsYXVbwjlopHxXcNoSoslAJvPhQVXLSCypUuZJDMCIpkLzTgNIzhTTZLLuOKHQSjNAjyulgvEnyjwCbaASZiZPQjPdxJdRdJYxzHlmXQgPauWcQMJrjiGHCZlTKNOPLKVcPJeHKIqjXyYVSRWIctdRHjcPxHBJAIUUoZEYrDrcJYmZLMAbbPxbwzpiAulLnmdnOnIOiuNDlnaRjiuSRDNnCtZjczBkyhs2f549844-cb88-31da-9d89-8bc53c5824cd', 'applicationName': 'invoicemanager'}
+04_04_2025 16:18:47 ---> Payload:{'vendorId': '1652083000002330001', 'vendorName': 'HRB3288-QA', 'plantLocation': 'KA', 'bookNumber': '', 'paymentsNumber': '86', 'internalInvoiceNumber': '1652083000002384285', 'vendorInvoiceNumber': 'B-PO-0010', 'paymentType': '', 'paymentDate': '23-12-2024', 'invoiceAmount': 1499.0, 'paymentAmount': 1499.0, 'fiscalYear': '2025', 'companyCode': '', 'currency': 'INR'}
+04_04_2025 16:18:52 ---> Payments Data has been uploaded Successfully.
+04_04_2025 16:22:51 ---> Execution Started: Friday, 04. April 2025 04:22:51 PM
+04_04_2025 16:22:51 ---> Calling API for Payments List for 25 records at a time.
+04_04_2025 16:22:51 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments?organization_id=60028841364&page=1&per_page=25
+04_04_2025 16:22:51 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:22:51 ---> Calling API to get the refresh token.
+04_04_2025 16:22:51 ---> URL:https://accounts.zoho.in/oauth/v2/token?refresh_token=1000.2a59689ac60f3ea765b39f27a9ea78ff.b60dfa6d2df181adf1ed9ecab76157d8&client_id=1000.A3SBX7MWZ1NO0M5EGBQWJ5YRRP4O3O&client_secret=f0bd80916afcc31706fc116a973584297e79ddaad1&grant_type=refresh_token
+04_04_2025 16:22:51 ---> Header:{'Authorization': 'Bearer 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:22:52 ---> 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119
+04_04_2025 16:22:55 ---> Calling API for Payment deatils.
+04_04_2025 16:22:55 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531103?organization_id=60028841364
+04_04_2025 16:22:55 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:55 ---> Calling API for Payment deatils.
+04_04_2025 16:22:55 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531137?organization_id=60028841364
+04_04_2025 16:22:55 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:56 ---> Calling API for Payment deatils.
+04_04_2025 16:22:56 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003467191?organization_id=60028841364
+04_04_2025 16:22:56 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:56 ---> Calling API for Payment deatils.
+04_04_2025 16:22:56 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002662279?organization_id=60028841364
+04_04_2025 16:22:56 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:56 ---> Calling API for Payment deatils.
+04_04_2025 16:22:56 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552068?organization_id=60028841364
+04_04_2025 16:22:56 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:57 ---> Calling API for Payment deatils.
+04_04_2025 16:22:57 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552447?organization_id=60028841364
+04_04_2025 16:22:57 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:57 ---> Calling API for Payment deatils.
+04_04_2025 16:22:57 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002517170?organization_id=60028841364
+04_04_2025 16:22:57 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:58 ---> Calling API for Payment deatils.
+04_04_2025 16:22:58 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002470208?organization_id=60028841364
+04_04_2025 16:22:58 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:58 ---> Calling API for Payment deatils.
+04_04_2025 16:22:58 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429377?organization_id=60028841364
+04_04_2025 16:22:58 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:58 ---> Calling API for Payment deatils.
+04_04_2025 16:22:58 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429420?organization_id=60028841364
+04_04_2025 16:22:58 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:59 ---> Calling API for Payment deatils.
+04_04_2025 16:22:59 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412293?organization_id=60028841364
+04_04_2025 16:22:59 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:59 ---> Calling API for Payment deatils.
+04_04_2025 16:22:59 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421046?organization_id=60028841364
+04_04_2025 16:22:59 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:22:59 ---> Calling API for Payment deatils.
+04_04_2025 16:22:59 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421089?organization_id=60028841364
+04_04_2025 16:22:59 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:00 ---> Calling API for Payment deatils.
+04_04_2025 16:23:00 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412387?organization_id=60028841364
+04_04_2025 16:23:00 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:00 ---> Calling API for Payment deatils.
+04_04_2025 16:23:00 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412748?organization_id=60028841364
+04_04_2025 16:23:00 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:00 ---> Calling API for Payment deatils.
+04_04_2025 16:23:00 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412250?organization_id=60028841364
+04_04_2025 16:23:00 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:01 ---> Calling API for Payment deatils.
+04_04_2025 16:23:01 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387722?organization_id=60028841364
+04_04_2025 16:23:01 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:01 ---> Calling API for Payment deatils.
+04_04_2025 16:23:01 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387983?organization_id=60028841364
+04_04_2025 16:23:01 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:01 ---> Calling API for Payment deatils.
+04_04_2025 16:23:01 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386524?organization_id=60028841364
+04_04_2025 16:23:01 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:02 ---> Calling API for Payment deatils.
+04_04_2025 16:23:02 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387293?organization_id=60028841364
+04_04_2025 16:23:02 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:02 ---> Calling API for Payment deatils.
+04_04_2025 16:23:02 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387328?organization_id=60028841364
+04_04_2025 16:23:02 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:02 ---> Calling API for Payment deatils.
+04_04_2025 16:23:02 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386405?organization_id=60028841364
+04_04_2025 16:23:02 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:03 ---> Calling API for Payment deatils.
+04_04_2025 16:23:03 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384917?organization_id=60028841364
+04_04_2025 16:23:03 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:03 ---> Calling API for Payment deatils.
+04_04_2025 16:23:03 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384424?organization_id=60028841364
+04_04_2025 16:23:03 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:03 ---> Calling API for Payment deatils.
+04_04_2025 16:23:03 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384459?organization_id=60028841364
+04_04_2025 16:23:03 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.db07df7c445d65a9da0b2a3cee21bae4.fafe714f266d429b156cfbc226043119'}
+04_04_2025 16:23:06 ---> Calling getToken API.
+04_04_2025 16:23:06 ---> URL:https://api.clear.in/discounting/invoicemanager/api/getToken
+04_04_2025 16:23:06 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'REQUEST_TYPE': 'ENC'}
+04_04_2025 16:23:06 ---> Payload:{'userName': 'api@eatgoods.com', 'password': 'Eat@12345'}
+04_04_2025 16:23:07 ---> Authorization Token is :AAhpKOuuJMmryTMmruSWkegZMVdKOXaXFDjGACLfYTsAmiSwVMUbBiMZnkCYvwPzAfaaWVNquWZsWGkkugUxfgdhIbUvnuXyeTEOkffVtPowsBBZgAlgfOrjWUbuCHQHsAmLyVXtHXNLkJwTWUiJdKKvSMavUSchUoeAlFsuKDOVYhepgpNcSQHBUmzEJEdyeRdWqTQjNoupKqDqioEJCQbtGxeUigpoxWHaNioqHajNLUeyBeqEVCAZlrOpNxRV2f549844-cb88-31da-9d89-8bc53c5824cd
+04_04_2025 16:23:07 ---> Calling payments  API.
+04_04_2025 16:23:07 ---> URL:https://api.clear.in/discounting/invoicemanager/api/payments
+04_04_2025 16:23:07 ---> Header:{'Accept': 'application/json', 'Content-Type': 'application/json', 'Authorization': 'AAhpKOuuJMmryTMmruSWkegZMVdKOXaXFDjGACLfYTsAmiSwVMUbBiMZnkCYvwPzAfaaWVNquWZsWGkkugUxfgdhIbUvnuXyeTEOkffVtPowsBBZgAlgfOrjWUbuCHQHsAmLyVXtHXNLkJwTWUiJdKKvSMavUSchUoeAlFsuKDOVYhepgpNcSQHBUmzEJEdyeRdWqTQjNoupKqDqioEJCQbtGxeUigpoxWHaNioqHajNLUeyBeqEVCAZlrOpNxRV2f549844-cb88-31da-9d89-8bc53c5824cd'}
+04_04_2025 16:23:07 ---> Payload:{'vendorId': '1652083000002330001', 'vendorName': 'HRB3288-QA', 'plantLocation': 'KA', 'bookNumber': '', 'paymentsNumber': '86', 'internalInvoiceNumber': '1652083000002384285', 'vendorInvoiceNumber': 'B-PO-0010', 'paymentType': '', 'paymentDate': '23-12-2024', 'invoiceAmount': 1499.0, 'paymentAmount': 1499.0, 'fiscalYear': '2025', 'companyCode': '', 'currency': 'INR'}
+04_04_2025 16:23:10 ---> Payments Data has been uploaded Successfully.
+04_04_2025 16:25:32 ---> Execution Started: Friday, 04. April 2025 04:25:32 PM
+04_04_2025 16:25:32 ---> Calling API for Payments List for 25 records at a time.
+04_04_2025 16:25:32 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments?organization_id=60028841364&page=1&per_page=25
+04_04_2025 16:25:32 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:25:33 ---> Calling API to get the refresh token.
+04_04_2025 16:25:33 ---> URL:https://accounts.zoho.in/oauth/v2/token?refresh_token=1000.2a59689ac60f3ea765b39f27a9ea78ff.b60dfa6d2df181adf1ed9ecab76157d8&client_id=1000.A3SBX7MWZ1NO0M5EGBQWJ5YRRP4O3O&client_secret=f0bd80916afcc31706fc116a973584297e79ddaad1&grant_type=refresh_token
+04_04_2025 16:25:33 ---> Header:{'Authorization': 'Bearer 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:25:33 ---> 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4
+04_04_2025 16:25:38 ---> Calling API for Payment deatils.
+04_04_2025 16:25:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531103?organization_id=60028841364
+04_04_2025 16:25:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:38 ---> Calling API for Payment deatils.
+04_04_2025 16:25:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531137?organization_id=60028841364
+04_04_2025 16:25:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:38 ---> Calling API for Payment deatils.
+04_04_2025 16:25:38 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003467191?organization_id=60028841364
+04_04_2025 16:25:38 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:39 ---> Calling API for Payment deatils.
+04_04_2025 16:25:39 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002662279?organization_id=60028841364
+04_04_2025 16:25:39 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:40 ---> Calling API for Payment deatils.
+04_04_2025 16:25:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552068?organization_id=60028841364
+04_04_2025 16:25:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:40 ---> Calling API for Payment deatils.
+04_04_2025 16:25:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552447?organization_id=60028841364
+04_04_2025 16:25:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:40 ---> Calling API for Payment deatils.
+04_04_2025 16:25:40 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002517170?organization_id=60028841364
+04_04_2025 16:25:40 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:41 ---> Calling API for Payment deatils.
+04_04_2025 16:25:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002470208?organization_id=60028841364
+04_04_2025 16:25:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:41 ---> Calling API for Payment deatils.
+04_04_2025 16:25:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429377?organization_id=60028841364
+04_04_2025 16:25:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:41 ---> Calling API for Payment deatils.
+04_04_2025 16:25:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429420?organization_id=60028841364
+04_04_2025 16:25:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:41 ---> Calling API for Payment deatils.
+04_04_2025 16:25:41 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412293?organization_id=60028841364
+04_04_2025 16:25:41 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:42 ---> Calling API for Payment deatils.
+04_04_2025 16:25:42 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421046?organization_id=60028841364
+04_04_2025 16:25:42 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:42 ---> Calling API for Payment deatils.
+04_04_2025 16:25:42 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421089?organization_id=60028841364
+04_04_2025 16:25:42 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:43 ---> Calling API for Payment deatils.
+04_04_2025 16:25:43 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412387?organization_id=60028841364
+04_04_2025 16:25:43 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:43 ---> Calling API for Payment deatils.
+04_04_2025 16:25:43 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412748?organization_id=60028841364
+04_04_2025 16:25:43 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:44 ---> Calling API for Payment deatils.
+04_04_2025 16:25:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412250?organization_id=60028841364
+04_04_2025 16:25:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:44 ---> Calling API for Payment deatils.
+04_04_2025 16:25:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387722?organization_id=60028841364
+04_04_2025 16:25:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:44 ---> Calling API for Payment deatils.
+04_04_2025 16:25:44 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387983?organization_id=60028841364
+04_04_2025 16:25:44 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:45 ---> Calling API for Payment deatils.
+04_04_2025 16:25:45 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386524?organization_id=60028841364
+04_04_2025 16:25:45 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:45 ---> Calling API for Payment deatils.
+04_04_2025 16:25:45 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387293?organization_id=60028841364
+04_04_2025 16:25:45 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:45 ---> Calling API for Payment deatils.
+04_04_2025 16:25:45 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387328?organization_id=60028841364
+04_04_2025 16:25:45 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:46 ---> Calling API for Payment deatils.
+04_04_2025 16:25:46 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386405?organization_id=60028841364
+04_04_2025 16:25:46 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:46 ---> Calling API for Payment deatils.
+04_04_2025 16:25:46 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384917?organization_id=60028841364
+04_04_2025 16:25:46 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:46 ---> Calling API for Payment deatils.
+04_04_2025 16:25:46 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384424?organization_id=60028841364
+04_04_2025 16:25:46 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:25:47 ---> Calling API for Payment deatils.
+04_04_2025 16:25:47 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384459?organization_id=60028841364
+04_04_2025 16:25:47 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.10f0ac1068574fc162f40ca00ef624fa.a381289edfc65e3569abc22db7b8f7f4'}
+04_04_2025 16:32:46 ---> Execution Started: Friday, 04. April 2025 04:32:46 PM
+04_04_2025 16:32:46 ---> Calling API for Payments List for 25 records at a time.
+04_04_2025 16:32:46 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments?organization_id=60028841364&page=1&per_page=25
+04_04_2025 16:32:46 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:32:46 ---> Calling API to get the refresh token.
+04_04_2025 16:32:46 ---> URL:https://accounts.zoho.in/oauth/v2/token?refresh_token=1000.2a59689ac60f3ea765b39f27a9ea78ff.b60dfa6d2df181adf1ed9ecab76157d8&client_id=1000.A3SBX7MWZ1NO0M5EGBQWJ5YRRP4O3O&client_secret=f0bd80916afcc31706fc116a973584297e79ddaad1&grant_type=refresh_token
+04_04_2025 16:32:46 ---> Header:{'Authorization': 'Bearer 1000.e930fa7d271ab5b8f505a9a7ad9a839b.4979b7594abb062a893e3ba10050119e'}
+04_04_2025 16:32:47 ---> 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479
+04_04_2025 16:32:50 ---> Calling API for Payment deatils.
+04_04_2025 16:32:50 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531103?organization_id=60028841364
+04_04_2025 16:32:50 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:32:54 ---> Calling API for Payment deatils.
+04_04_2025 16:32:54 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003531137?organization_id=60028841364
+04_04_2025 16:32:54 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:32:55 ---> Calling API for Payment deatils.
+04_04_2025 16:32:55 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000003467191?organization_id=60028841364
+04_04_2025 16:32:55 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:32:58 ---> Calling API for Payment deatils.
+04_04_2025 16:32:58 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002662279?organization_id=60028841364
+04_04_2025 16:32:58 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:32:59 ---> Calling API for Payment deatils.
+04_04_2025 16:32:59 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552068?organization_id=60028841364
+04_04_2025 16:32:59 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:00 ---> Calling API for Payment deatils.
+04_04_2025 16:33:00 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002552447?organization_id=60028841364
+04_04_2025 16:33:00 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:01 ---> Calling API for Payment deatils.
+04_04_2025 16:33:01 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002517170?organization_id=60028841364
+04_04_2025 16:33:01 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:02 ---> Calling API for Payment deatils.
+04_04_2025 16:33:02 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002470208?organization_id=60028841364
+04_04_2025 16:33:02 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:05 ---> Calling API for Payment deatils.
+04_04_2025 16:33:05 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429377?organization_id=60028841364
+04_04_2025 16:33:05 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:05 ---> Calling API for Payment deatils.
+04_04_2025 16:33:05 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002429420?organization_id=60028841364
+04_04_2025 16:33:05 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:05 ---> Calling API for Payment deatils.
+04_04_2025 16:33:05 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412293?organization_id=60028841364
+04_04_2025 16:33:05 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:06 ---> Calling API for Payment deatils.
+04_04_2025 16:33:06 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421046?organization_id=60028841364
+04_04_2025 16:33:06 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:06 ---> Calling API for Payment deatils.
+04_04_2025 16:33:06 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002421089?organization_id=60028841364
+04_04_2025 16:33:06 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:06 ---> Calling API for Payment deatils.
+04_04_2025 16:33:06 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412387?organization_id=60028841364
+04_04_2025 16:33:06 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:07 ---> Calling API for Payment deatils.
+04_04_2025 16:33:07 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412748?organization_id=60028841364
+04_04_2025 16:33:07 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:07 ---> Calling API for Payment deatils.
+04_04_2025 16:33:07 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002412250?organization_id=60028841364
+04_04_2025 16:33:07 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:07 ---> Calling API for Payment deatils.
+04_04_2025 16:33:07 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387722?organization_id=60028841364
+04_04_2025 16:33:07 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:08 ---> Calling API for Payment deatils.
+04_04_2025 16:33:08 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387983?organization_id=60028841364
+04_04_2025 16:33:08 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:08 ---> Calling API for Payment deatils.
+04_04_2025 16:33:08 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386524?organization_id=60028841364
+04_04_2025 16:33:08 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:08 ---> Calling API for Payment deatils.
+04_04_2025 16:33:08 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387293?organization_id=60028841364
+04_04_2025 16:33:08 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:09 ---> Calling API for Payment deatils.
+04_04_2025 16:33:09 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002387328?organization_id=60028841364
+04_04_2025 16:33:09 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:09 ---> Calling API for Payment deatils.
+04_04_2025 16:33:09 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002386405?organization_id=60028841364
+04_04_2025 16:33:09 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:10 ---> Calling API for Payment deatils.
+04_04_2025 16:33:10 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384917?organization_id=60028841364
+04_04_2025 16:33:10 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:10 ---> Calling API for Payment deatils.
+04_04_2025 16:33:10 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384424?organization_id=60028841364
+04_04_2025 16:33:10 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
+04_04_2025 16:33:10 ---> Calling API for Payment deatils.
+04_04_2025 16:33:10 ---> URL:https://www.zohoapis.in/books/v3/vendorpayments/1652083000002384459?organization_id=60028841364
+04_04_2025 16:33:10 ---> Header:{'Authorization': 'Zoho-oauthtoken 1000.8bc13bfad18c64841caafebb300d1479.a25b4683eef043d66ca27694c5bb1479'}
